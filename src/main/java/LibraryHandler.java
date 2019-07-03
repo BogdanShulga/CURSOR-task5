@@ -58,7 +58,7 @@ class LibraryHandler {
             System.out.println("You have not taken any books yet!!!");
             return;
         }
-        System.out.println("A list of books you have taken all the time:");
+        System.out.println("A list of books you have taken about all the time:");
         Collection<String> userBooks = userBookMap.values();
         for (String s : userBooks) {
             System.out.println(s);
@@ -99,7 +99,7 @@ class LibraryHandler {
             }
 
             String userBookMapOrDefault = userBookMap.getOrDefault(n, "For this date there were no books taken");
-            System.out.println("On " + n + "th, you took the book\n" + userBookMapOrDefault);
+            System.out.println("On " + n + ", you took the book\n" + userBookMapOrDefault);
             stop = true;
         }
     }
