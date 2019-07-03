@@ -15,7 +15,8 @@ public class Main {
 
         System.out.println("Hi! It is a library.");
         while (!stop) {
-            System.out.println("Pleas, choose a type of operation:");
+            System.out.println("============================================================================");
+            System.out.println("Please, choose a type of operation:");
             System.out.println("1 - to choose the book");
             System.out.println("2 - to show a list of dates in which you took the books");
             System.out.println("3 - to show a list of books you have taken all the time");
@@ -24,6 +25,7 @@ public class Main {
 
             try {
                 action = in.nextInt();
+                System.out.println();
                 System.out.println("You entered " + action);
             } catch (java.util.InputMismatchException ex) {
                 System.out.println("You entered incorrect data!");

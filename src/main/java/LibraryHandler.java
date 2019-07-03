@@ -10,6 +10,7 @@ class LibraryHandler {
     private long l = 1L;
 
     void chooseBook() {
+        System.out.println("============================================================================");
         if (bookList.isEmpty()) {
             System.out.println("You have already taken all books from the library!!!");
             return;
@@ -26,6 +27,7 @@ class LibraryHandler {
         while (!stop) {
             try {
                 n = scanner.nextInt();
+                System.out.println();
             } catch (NoSuchElementException | IllegalStateException ex) {
                 System.out.println("You entered incorrect data!");
                 scanner.nextLine();
@@ -76,6 +78,7 @@ class LibraryHandler {
     }
 
     void findBook() {
+        System.out.println("============================================================================");
         if (userBookMap.isEmpty()) {
             System.out.println("You have not taken any books yet!!!");
             return;
@@ -88,6 +91,7 @@ class LibraryHandler {
             System.out.println("Please enter a date (for example: " + LocalDate.now() + "):");
             try {
                 n = LocalDate.parse(scanner.next());
+                System.out.println();
             } catch (Exception ex) {
                 System.out.println("You entered incorrect data!");
                 scanner.nextLine();
