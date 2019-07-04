@@ -36,9 +36,9 @@ public class Main {
             if (action == 1) {
                 libraryHandler.chooseBook();
             } else if (action == 2) {
-                libraryHandler.showBooks();
-            } else if (action == 3) {
                 libraryHandler.showDates();
+            } else if (action == 3) {
+                libraryHandler.showBooks();
             } else if (action == 4) {
                 libraryHandler.findBook();
             } else if (action == 5) {
